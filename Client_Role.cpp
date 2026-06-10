@@ -98,8 +98,12 @@ void makePayment(Bank bank, Client* client)
 	std::cout << "How much money: ";
 	__int64 amount; std::cin >> amount;
 
+	std::cin.ignore();
+
 	std::cout << "Today's date: ";
 	String date; std::cin >> date;
+
+	std::cin.ignore();
 
 	std::cout << "Account index (from which account): ";
 	size_t index; std::cin >> index;
@@ -109,6 +113,8 @@ void makePayment(Bank bank, Client* client)
 		std::cerr << "No such index!" << std::endl;
 		return;
 	}
+
+	std::cin.ignore();
 
 	std::cout << "To wich service: ";
 	String service; std::cin >> service;
@@ -127,8 +133,12 @@ void makeTransfer(Bank bank, Client* client)
 	std::cout << "How much money: ";
 	__int64 amount; std::cin >> amount;
 
+	std::cin.ignore();
+
 	std::cout << "Today's date: ";
 	String date; std::cin >> date;
+
+	std::cin.ignore();
 
 	std::cout << "Account index (from which account): ";
 	size_t index_from; std::cin >> index_from;

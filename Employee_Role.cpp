@@ -65,6 +65,8 @@ void create_account(Bank bank)
 {
 	srand(time(0));
 
+	std::cin.ignore();
+
 	String name;
 	std::cout << "Write clients name: ";
 	std::cin >> name;
